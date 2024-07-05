@@ -1,4 +1,4 @@
-module github.com/radiofrance/icecast_exporter
+module github.com/radio-quetsch/icecast-exporter
 
 go 1.13
 
