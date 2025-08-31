@@ -9,10 +9,10 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o /icecast_exporter
 # Final stage
 FROM alpine
 
-LABEL author "Jee R"
-LABEL maintainer "jee@radio-quetsch.eu"
-LABEL description "Exporter for Icecast stats"
-LABEL org.opencontainers.image.source https://github.com/radio-quetsch/icecast-exporter
+LABEL author="Jee R"
+LABEL maintainer="jee@radio-quetsch.eu"
+LABEL description="Exporter for Icecast stats"
+LABEL org.opencontainers.image.source=https://github.com/radio-quetsch/icecast-exporter
 
 COPY --from=build /icecast_exporter /icecast_exporter
 
